@@ -1,0 +1,25 @@
+name: sync_version
+
+on:
+  push:
+    paths:
+      - dist/gkd.json5
+
+permissions: write-all
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    if: github.event.head_commit.message != 'chore(actions): sync_version'
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Sync version file
+        run: |
+          node -e "const fs=require('fs');const s=fs.readFileSync('dist/gkd.json5','utf8');const id=/id:\s*(\d+)/.exec(s)[1];const v=/version:\s*(\d+)/.exec(s)[1];fs.writeFileSync('dist/gkd.version.json5','{id:'+id+',version:'+v+'}');"
+          if git diff --quiet -- dist/gkd.version.json5; then echo "no change"; exit 0; fi
+          git config --local user.email github-actions[bot]@users.noreply.github.com
+          git config --local user.name github-actions[bot]
+          git add dist/gkd.version.json5
+          git commit -m "chore(actions): sync_version"
+          git push
