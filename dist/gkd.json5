@@ -1,7 +1,7 @@
 {
   id: 1794192532,
   name: 'cooly的订阅',
-  version: 5,
+  version: 6,
   author: 'cooly',
   updateUrl: 'https://raw.githubusercontent.com/cooly0531-beep/gkdkukude/main/dist/gkd.json5',
   checkUpdateUrl: './gkd.version.json5',
@@ -36,6 +36,19 @@
           name: '取消',
           rules: {
             matches: '[id="tv.danmaku.bili:id/reason1_layout"]'
+          }
+        }
+      ]
+    },
+    {
+      id: 'com.ss.android.article.news',
+      name: '今日头条',
+      groups: [
+        {
+          key: 0,
+          name: '来自快照的规则 17:29',
+          rules: {
+            matches: '[id="com.ss.android.article.news:id/d25"]'
           }
         }
       ]
