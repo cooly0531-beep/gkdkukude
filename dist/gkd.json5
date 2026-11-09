@@ -1,7 +1,7 @@
 {
   id: 1794192532,
   name: 'cooly的订阅',
-  version: 8,
+  version: 9,
   author: 'cooly',
   updateUrl: 'https://raw.githubusercontent.com/cooly0531-beep/gkdkukude/main/dist/gkd.json5',
   checkUpdateUrl: './gkd.version.json5',
@@ -49,26 +49,6 @@
           name: '来自快照的规则 17:29',
           rules: {
             matches: '[id="com.ss.android.article.news:id/d25"]'
-          }
-        }
-      ]
-    },
-    {
-      id: 'com.jingdong.app.mall',
-      name: '京东',
-      groups: [
-        {
-          key: 0,
-          name: '来自快照的规则 18:10',
-          rules: {
-            matches: '[id="com.jingdong.app.mall:id/b3s"] > RelativeLayout > FrameLayout > RelativeLayout > RelativeLayout > FrameLayout > ViewGroup > [desc="关闭浮层活动"] > ImageView'
-          }
-        },
-        {
-          key: 1,
-          name: '来自快照的规则 18:49',
-          rules: {
-            matches: '[id="com.jingdong.app.mall:id/b3s"] > RelativeLayout > RelativeLayout > RelativeLayout > FrameLayout > ViewGroup > [desc="关闭浮层活动"] > ImageView'
           }
         }
       ]
