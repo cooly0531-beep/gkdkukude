@@ -1,1 +1,24 @@
-{id:531233,name:'cooly的订阅',version:2,author:'cooly',checkUpdateUrl:'./gkd.version.json5',supportUri:'https://github.com/cooly0531-beep/gkdkukude',categories:[],globalGroups:[],apps:[{id:'li.songe.gkd',name:'GKD',groups:[]},{id:'com.tencent.mobileqq',name:'QQ',groups:[]},{id:'com.tencent.mm',name:'微信',groups:[]}]}
+{
+  id: 1794192532,
+  name: 'cooly的订阅',
+  version: 3,
+  author: 'cooly',
+  updateUrl: 'https://raw.githubusercontent.com/cooly0531-beep/gkdkukude/main/dist/gkd.json5',
+  checkUpdateUrl: './gkd.version.json5',
+  supportUri: '',
+  apps: [
+    {
+      id: 'com.baidu.BaiduMap',
+      name: '百度地图',
+      groups: [
+        {
+          key: 0,
+          name: '关闭',
+          rules: {
+            matches: '[id="com.baidu.BaiduMap:id/yellow_banner_close"]'
+          }
+        }
+      ]
+    }
+  ]
+}
