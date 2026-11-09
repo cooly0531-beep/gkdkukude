@@ -1,7 +1,7 @@
 {
   id: 1794192532,
   name: 'cooly的订阅',
-  version: 3,
+  version: 4,
   author: 'cooly',
   updateUrl: 'https://raw.githubusercontent.com/cooly0531-beep/gkdkukude/main/dist/gkd.json5',
   checkUpdateUrl: './gkd.version.json5',
@@ -13,6 +13,26 @@
       groups: [
         {
           key: 0,
+          name: '关闭',
+          rules: {
+            matches: '[id="com.baidu.BaiduMap:id/yellow_banner_close"]'
+          }
+        }
+      ]
+    },
+    {
+      id: 'tv.danmaku.bili',
+      name: '哔哩哔哩',
+      groups: [
+        {
+          key: 0,
+          name: '关闭',
+          rules: {
+            matches: '[id="com.baidu.BaiduMap:id/yellow_banner_close"]'
+          }
+        },
+        {
+          key: 1,
           name: '关闭',
           rules: {
             matches: '[id="com.baidu.BaiduMap:id/yellow_banner_close"]'
