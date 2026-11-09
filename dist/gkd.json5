@@ -1,7 +1,7 @@
 {
   id: 1794192532,
   name: 'cooly的订阅',
-  version: 4,
+  version: 5,
   author: 'cooly',
   updateUrl: 'https://raw.githubusercontent.com/cooly0531-beep/gkdkukude/main/dist/gkd.json5',
   checkUpdateUrl: './gkd.version.json5',
@@ -26,16 +26,16 @@
       groups: [
         {
           key: 0,
-          name: '关闭',
+          name: '来自快照的规则 11:08',
           rules: {
-            matches: '[id="com.baidu.BaiduMap:id/yellow_banner_close"]'
+            matches: '[id="tv.danmaku.bili:id/more_layout"] > ImageView'
           }
         },
         {
           key: 1,
-          name: '关闭',
+          name: '取消',
           rules: {
-            matches: '[id="com.baidu.BaiduMap:id/yellow_banner_close"]'
+            matches: '[id="tv.danmaku.bili:id/reason1_layout"]'
           }
         }
       ]
